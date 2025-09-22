@@ -20,7 +20,7 @@ if (process.env.NODE_ENV !== "production") {
 (0, index_route_1.default)(app);
 if (process.env.NODE_ENV === "production") {
     app.use(express_1.default.static(path_1.default.join(__dirname, "../client/dist")));
-    app.get("*", (req, res) => {
+    app.get("/*", (req, res) => {
         res.sendFile(path_1.default.join(__dirname, "../client/dist/index.html"));
     });
 }
