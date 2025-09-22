@@ -1,0 +1,20 @@
+{
+  "name": "todop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trihuynh784/Poca_TodoP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trihuynh784/Poca_TodoP/issues"
+  },
+  "homepage": "https://github.com/trihuynh784/Poca_TodoP#readme",
+  "description": ""
+}

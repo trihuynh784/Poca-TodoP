@@ -1,0 +1,10 @@
+# Cho phép tất cả bot index toàn bộ website
+User-agent: *
+Allow: /
+
+# Disallow SEO
+Disallow: /admin/
+Disallow: /api/
+
+# Khai báo sitemap để bot dễ index
+Sitemap: https://yourdomain.com/sitemap.xml
