@@ -8,7 +8,6 @@ import path from "path";
 dotenv.config();
 connectToDatabase();
 
-const __dirname = path.resolve();
 const port: string | number = process.env.PORT || 3000;
 const app = express();
 
@@ -20,10 +19,10 @@ if (process.env.NODE_ENV !== "production") {
 routes(app);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/dist")));
+  app.use(express.static(path.join(__dirname, "../../client/dist")));
 
   app.get(/.*/ as any, (req: Request, res: Response) => {
-    res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+    res.sendFile(path.join(__dirname, "../../client/dist/index.html"));
   });
 }
 
