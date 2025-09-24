@@ -1,4 +1,5 @@
-const baseUrl = "http://localhost:3000";
+const baseUrl =
+  import.meta.env.MODE === "development" ? "http://localhost:3000" : "/api";
 
 const request = async (
   url: string,
